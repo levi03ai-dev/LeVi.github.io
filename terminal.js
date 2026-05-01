@@ -102,8 +102,8 @@ const commands = {
     blank();
     addLine(s("out-accent", "// contact"), "out-indent");
     blank();
-    addLine(`${s("out-dim", "email   ")}${s("out-cyan", "email@example.com")}`, "out-indent");
-    addLine(`${s("out-dim", "github  ")}${s("out-cyan", "github.com/astro")}`, "out-indent");
+    addLine(`${s("out-dim", "email   ")}${s("out-cyan", "levi.03.ai@gmail.com")}`, "out-indent");
+    addLine(`${s("out-dim", "github  ")}${s("out-cyan", "github.com/LeVi")}`, "out-indent");
     blank();
     addLine(s("out-dim", `type "github" to open · "resume" to download`), "out-indent");
     blank();
@@ -159,7 +159,7 @@ function handle(raw) {
 }
 
 function runCommand(cmd) {
-  addLine(`${s("out-accent", "astro@dev:~$")} ${s("out-cmd", cmd)}`);
+  addLine(`${s("out-accent", "LeVi@dev:~$")} ${s("out-cmd", cmd)}`);
   handle(cmd);
 }
 
@@ -197,7 +197,7 @@ termInput.addEventListener("keydown", (e) => {
 });
 
 function welcome() {
-  addLine(`${s("out-accent", "astro")}${s("out-dim", ".dev")}  ${s("out-dim", "terminal v1.0")}`);
+  addLine(`${s("out-accent", "LeVi")}${s("out-dim", ".dev")}  ${s("out-dim", "terminal v1.0")}`);
   addLine(s("out-dim", "─".repeat(38)));
   addLine(`${s("out-dim", "type")} ${s("out-green", "help")} ${s("out-dim", "for available commands")}`);
   blank();
